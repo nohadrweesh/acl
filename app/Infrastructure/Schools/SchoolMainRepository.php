@@ -15,7 +15,7 @@ class SchoolMainRepository implements ISchoolMainRepository
         return $schoolRepository->addSchool($school);
     }
     public function getAllSchools(){
-         $schoolRepository = new SchoolRepository;
+        $schoolRepository = new SchoolRepository;
         return $schoolRepository->getAllSchools();
     }
 

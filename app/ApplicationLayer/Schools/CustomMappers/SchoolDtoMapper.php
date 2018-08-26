@@ -22,7 +22,7 @@ class SchoolDtoMapper
         return $schoolDto;
     }
 
-    
+    // FROM ENTITY TO DTO
 
     public static function CustomerMapper(School $school){
         $schoolDto = new SchoolDto();

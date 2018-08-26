@@ -16,6 +16,7 @@ use App\DomainModelLayer\Schools\School;
 
 interface ISchoolMainRepository
 {
+	//IMPLEMENTATION IN INFRASTRUCTURE
     public function addSchool(School $school);
     public function getAllSchools();
     public function beginDatabaseTransaction();

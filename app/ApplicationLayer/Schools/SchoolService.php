@@ -28,9 +28,8 @@ class SchoolService
 
     public function AddSchool(SchoolDto $schoolDto){
         $this->schoolRepository->beginDatabaseTransaction();
-        $school = new School($schoolDto);//In domainModelLayer
-        //$school->setId(18);
         
+        $school = new School($schoolDto);//In domainModelLayer      
         $this->schoolRepository->AddSchool($school);
         
         $this->schoolRepository->commitDatabaseTransaction();

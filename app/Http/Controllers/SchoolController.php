@@ -39,7 +39,7 @@ class SchoolController extends Controller
         $result=$this->schoolService->getAllSchools(); //this is a dto 
          //dd($result);
          //return $result;
-         return $this->handleResponse($result);
+         return $this->handleResponse($result);//from dto to ResponseObject(special JSON)
     }
 
     /**
